@@ -1,0 +1,85 @@
+html{color:#000;background:#000;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td{margin:0;padding:0;}table{border-collapse:collapse;border-spacing:0;}fieldset,img{border:0;}address,caption,cite,code,dfn,em,strong,th,var,optgroup{font-style:inherit;font-weight:inherit;}del,ins{text-decoration:none;}li{list-style:none;}caption,th{text-align:left;}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal;}q:before,q:after{content:'';}abbr,acronym{border:0;font-variant:normal;}sup{vertical-align:baseline;}sub{vertical-align:baseline;}legend{color:#000;}input,button,textarea,select,optgroup,option{font-family:inherit;font-size:inherit;font-style:inherit;font-weight:inherit;}input,button,textarea,select{font-size:100%;}
+
+html,body { font-size: 0; background-color: #000; 
+       font-family: sans-serif; color: #aaa; 
+       width: 100%; height: 100%; 
+       padding: 0 0 85px 0; overflow: hidden; }
+
+.wf-inactive a, .wf-inactive span, .wf-inactive div { font-family: sans-serif }
+.wf-active a, .wf-active span, .wf-active div { font-family: "Molengo" }
+
+/* general */
+.hidden { display: none }
+a { color: #888; text-decoration: none }
+a.active, a:hover { color: white }
+
+#nav {position: absolute; overflow: hidden; width: 100%; height: 85px;
+             bottom: 0; left: 0; text-align: center; background: black;
+             z-index: 99; }
+ 
+table#main {height: 100%; width: 100%; }
+td#dis_top  {height: 10%;}
+td#content {height: 60%; text-align: center;}
+td#dis_bottom  {height: 30%;}
+ 
+ 
+@media screen {
+  body>div#nav { position: fixed; }
+}
+ 
+/* nav */
+#nav table { margin: 0 auto; }
+#nav td { vertical-align: bottom; text-align: left; }
+#nav td.sub { font-size: 17px; vertical-align: bottom; 
+              text-align: right; height: 54px; padding-bottom: 2px; }
+
+td#logo { width: 175px; padding-right: 30px; }
+td#editorial { width: 77px; padding-right: 10px; }
+td#commercial { width: 101px; padding-right: 10px; }
+td#portraits { width: 83px; padding-right: 20px; }
+td#info { width: 33px; padding-right: 0px; }
+ 
+a.menuitem { font-size: 17px;  }
+#logotitle { font-size: 15px; }
+
+
+/* front page */
+div#frontimage {margin: 0 auto; text-align: center; width: 900px;}
+
+
+/* gallery */
+div#gallerythumbs { padding-left: 55px; width: 900px; 
+                    text-align: left; margin: 0 auto;  }
+.story { font-size: 0px; line-height: 0px; }
+#gallerythumbs img { border: solid 10px black;}
+#gallerythumbs img.active { border-color: #222; } 
+#gallerythumbs .storyname { position: absolute; color: #666; background: #222; 
+                            font-size: 12px; padding: 2px 8px 2px 5px; 
+                            line-height: 14px;}
+
+/* picture */
+#picture_page { margin: 0 auto; }
+td#section_label { text-align: right; margin-bottom: 10px; font-size: 10px; 
+                   color: #666; }
+ 
+/* info */
+div#infopage {margin: 0 auto; text-align: left; width: 600px; padding-top: 30px;}
+
+div#infopage table { width: 100%; }
+
+div#infopage td { vertical-align: top; }
+div#infopage #clients { text-align: right; }
+
+.label { color: #666; font-size: 12px;  }
+.info { color: white; font-size: 18px; margin-bottom: 10px; }
+
+#links { color: #666; font-size: 14px; margin: 15px 0 10px; }
+#copyright { color: #444; font-size: 14px; margin-top: 20px; }
+
+#clients { width: 200px }
+#clients .section { color: white; font-size: 14px; margin-bottom: 4px; 
+                    margin-top: 8px; }
+#clients .client { margin-bottom: 1px; font-size: 12px; color: #555 }
+
+/* error */
+div#error {margin: 0 auto; text-align: center; width: 500px; font-size:14px;}
